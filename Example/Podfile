@@ -1,0 +1,8 @@
+use_frameworks!
+
+
+target 'OpenSSLAll_Tests', :exclusive => true do
+  pod 'OpenSSLAll', :path => '../'
+
+  
+end
