@@ -20,7 +20,6 @@ Pod::Spec.new do |s|
   s.header_dir = 'openssl'
   s.source_files = ['include/*.h', 'src/**/*.{h,c}']
   s.preserve_paths = ['src/**/*.ch']
-  s.exclude_files = ['include/rc2.h', 'include/rc4.h']
   s.public_header_files = 'include/*.h'
   s.compiler_flags = '-DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -O3 -fomit-frame-pointer -fno-common -DOPENSSL_NO_INLINE_ASM -DOPENSSL_NO_ASM'
 
