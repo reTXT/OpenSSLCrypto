@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.source_files = ['openssl/*.h', 'src/**/*.{h,c}']
   s.header_mappings_dir = '.'
   s.private_header_files = 'src/**/*.h'
-  s.compiler_flags = '-DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -O3 -fomit-frame-pointer -fno-common'
+  s.compiler_flags = '-DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -O3 -fomit-frame-pointer -fno-common -DOPENSSL_NO_INLINE_ASM -DOPENSSL_NO_ASM'
   s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/OpenSSLAll' }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
