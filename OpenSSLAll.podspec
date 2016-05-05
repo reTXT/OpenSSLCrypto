@@ -17,11 +17,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.header_mappings_dir = '.'
+  s.header_dir = 'openssl'
   s.source_files = ['openssl/*.h', 'crypto/**/*.{h,c}', 'engines/**/*.{h,c}']
   s.preserve_paths = ['crypto/**/*.ch']
   s.public_header_files = 'openssl/*.h'
   s.compiler_flags = '-DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -O3 -fomit-frame-pointer -fno-common -DOPENSSL_NO_INLINE_ASM -DOPENSSL_NO_ASM'
-  s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/OpenSSLAll' }
 
 end
