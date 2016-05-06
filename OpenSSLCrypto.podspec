@@ -1,10 +1,10 @@
 
 Pod::Spec.new do |s|
   s.name             = "OpenSSLCrypto"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of OpenSSLCrypto."
+  s.version          = "0.1"
+  s.summary          = "A framework'd version of OpenSSL's libcrypto."
   s.description      = <<-DESC
-  A long description of OpenSSLCrypto
+  Provides OpenSSL libcrypto in a framework. This works around the "transitive dependency" problem introduced when using the standard OpenSSL pod.
                        DESC
 
   s.homepage         = "https://github.com/reTXT/OpenSSLCrypto"
